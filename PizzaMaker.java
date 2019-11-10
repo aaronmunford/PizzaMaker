@@ -80,8 +80,10 @@ public class PizzaMaker {
 				//System.out.println("What Size Pizza do you want?\nType \"S\" for Small\tType \"M\" for Medium\tType \"L\" for Large\tType \"XL\" "
 					//	+ "for Extra-Large ");
 					//	size = scan.nextLine();
+				String bread = breadType [r.nextInt(breadType.length)];
 						
-							System.out.println("\n\n\nHere is your pizza:");
+				
+							System.out.println("\n\n\nHere is your " + bread + " pizza:");
 							for(int i = 1; i <= numOfTops; i++) {
 							
 								String topping = tops [r.nextInt(veganTops.length)];
@@ -185,7 +187,9 @@ public class PizzaMaker {
 					
 					
 					if (numOfTops <= 10) {
-						System.out.println("\n\n\nHere is your pizza:");
+						String bread = breadType [r.nextInt(breadType.length)];
+						
+						System.out.println("\n\n\nHere is your " + bread + " pizza:");
 						for(int i = 1; i <= numOfTops; i++) {
 						String topping = tops [r.nextInt(tops.length)];
 						System.out.println(i + "." + topping);
